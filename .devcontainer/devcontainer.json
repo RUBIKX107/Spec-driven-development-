@@ -1,0 +1,15 @@
+{
+    "name": "CUDA C++ Development",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+            "installCudnn": true,
+            "cudaVersion": "12.4"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["ms-vscode.cpptools", "nvidia.nsight-vscode-edition"]
+        }
+    }
+}
